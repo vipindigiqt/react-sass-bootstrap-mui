@@ -16,6 +16,24 @@ const theme = createTheme({
       '"Segoe UI Symbol"',
     ].join(","),
   },
+  components: {
+    MuiButton: {
+      defaultProps: {
+        disableElevation: true,
+        disableRipple: true,
+      },
+      styleOverrides: {
+        root: {
+          textTransform: "none",
+        },
+      },
+    },
+    MuiButtonBase: {
+      defaultProps: {
+        disableRipple: true,
+      },
+    },
+  },
 });
 
 export default theme;

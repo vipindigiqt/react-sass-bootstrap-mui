@@ -4,7 +4,7 @@ import { ThemeProvider } from "@mui/material/styles";
 import App from "./App";
 
 // Custom MUI theme
-import theme from "./muiTheme";
+import theme from "./styles/muiTheme";
 
 // Global styles
 import "./styles/global.scss";
@@ -15,5 +15,5 @@ ReactDOM.render(
       <App />
     </ThemeProvider>
   </React.StrictMode>,
-  document.getElementById("root")
+  document.getElementById("root"),
 );
