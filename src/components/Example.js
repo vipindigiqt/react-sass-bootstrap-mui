@@ -1,22 +1,15 @@
 import * as React from "react";
 import Button from "@mui/material/Button";
-import ButtonGroup from "@mui/material/ButtonGroup";
+
+import Container from "./common/Container";
+import Counter from "./Counter";
 import useToggle from "../hooks/useToggle";
 
 const Example = () => {
   const [outlined, setOutlined] = useToggle();
-  const [count, setCount] = React.useState(0);
-
-  const addCount = () => {
-    setCount((count) => count + 1);
-  };
-
-  const substractCount = () => {
-    count >= 1 && setCount((count) => count - 1);
-  };
 
   return (
-    <div className="container-lg text-center py-4">
+    <Container xl={true} className="text-center py-4">
       <h1 className="mb-5">Hello World</h1>
 
       <div className="boilerplate-info">
@@ -36,9 +29,10 @@ const Example = () => {
             onClick={setOutlined}
             variant={outlined ? "outlined" : "contained"}
           >
-            {`Customized Material UI Button ${
-              outlined ? "(outlined)" : "(contained)"
+            {`Customized Material UI Button (${
+              outlined ? "outlined" : "contained"
             }`}
+            )
           </Button>
           <small>Click to Toggle Variant</small>
         </div>
@@ -49,16 +43,10 @@ const Example = () => {
         </div>
 
         <div className="mt-5">
-          <p className="text-secondary display-3 fw-bold">{count}</p>
-          <ButtonGroup variant="outlined">
-            <Button onClick={addCount}>Add</Button>
-            <Button disabled={count === 0} onClick={substractCount}>
-              Substract
-            </Button>
-          </ButtonGroup>
+          <Counter />
         </div>
       </div>
-    </div>
+    </Container>
   );
 };
 
