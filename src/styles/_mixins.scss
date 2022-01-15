@@ -1,0 +1,40 @@
+// Responsive
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
+
+@mixin break($size) {
+  @media (min-width: map-get($breakpoints, $size)) {
+    @content;
+  }
+}
+
+// Square
+
+@mixin square($size, $rounded: false, $centered: true) {
+  height: $size;
+  width: $size;
+
+  @if $rounded {
+    border-radius: 50%;
+  }
+
+  @if $centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+// Button Reset
+
+@mixin button-reset {
+  background: transparent;
+  outline: none;
+  border: none;
+  font: inherit;
+}
