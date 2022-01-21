@@ -4,11 +4,14 @@ import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import Invenotry2 from "@mui/icons-material/Inventory2";
+import Divider from "@mui/material/Divider";
+import GridViewRoundedIcon from "@mui/icons-material/GridViewRounded";
 
 import Container from "./common/Container";
 import Counter from "./Counter";
 import useToggle from "../hooks/useToggle";
+
+import reactImage from "../assets/images/react.jpg";
 
 const Example = () => {
   const [outlined, setOutlined] = useToggle();
@@ -16,44 +19,51 @@ const Example = () => {
   return (
     <Container xl={true} className="text-center py-5">
       <div className="boilerplate-info">
-        <h4 className="mb-4 text-muted fw-bold fs-4">
+        <div className="mb-4">
+          <img src={reactImage} className="w-100 img-fluid rounded" alt="" />
+        </div>
+        <h4 className="mb-4 text-dark fw-bold fs-4">
           Available packages by default
         </h4>
 
         <List sx={{ border: "1px solid #ddd" }}>
           <ListItem>
             <ListItemIcon>
-              <Invenotry2 />
+              <GridViewRoundedIcon />
             </ListItemIcon>
             <ListItemText primary="Sass" secondary="Dart Sass" />
           </ListItem>
+          <Divider sx={{ marginY: ".5rem" }} />
           <ListItem>
             <ListItemIcon>
-              <Invenotry2 />
+              <GridViewRoundedIcon />
             </ListItemIcon>
             <ListItemText
               primary="Bootstrap 5"
               secondary="Fully customizable using Sass + Initial Setup"
             />
           </ListItem>
+          <Divider sx={{ marginY: ".5rem" }} />
           <ListItem>
             <ListItemIcon>
-              <Invenotry2 />
+              <GridViewRoundedIcon />
             </ListItemIcon>
             <ListItemText
               primary="MUI 5"
               secondary="Fully Customizable Setup"
             />
           </ListItem>
+          <Divider sx={{ marginY: ".5rem" }} />
           <ListItem>
             <ListItemIcon>
-              <Invenotry2 />
+              <GridViewRoundedIcon />
             </ListItemIcon>
             <ListItemText primary="axios" />
           </ListItem>
+          <Divider sx={{ marginY: ".5rem" }} />
           <ListItem>
             <ListItemIcon>
-              <Invenotry2 />
+              <GridViewRoundedIcon />
             </ListItemIcon>
             <ListItemText
               primary="Prettier, ESLint, Git Hooks Configured"
