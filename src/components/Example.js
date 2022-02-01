@@ -31,7 +31,7 @@ const Example = () => {
             <ListItemIcon>
               <GridViewRoundedIcon />
             </ListItemIcon>
-            <ListItemText primary="Sass" secondary="Dart Sass" />
+            <ListItemText primary="Sass" secondary="Dart Sass." />
           </ListItem>
           <Divider sx={{ marginY: ".5rem" }} />
           <ListItem>
@@ -40,7 +40,7 @@ const Example = () => {
             </ListItemIcon>
             <ListItemText
               primary="Bootstrap 5"
-              secondary="Fully customizable using Sass + Initial Setup"
+              secondary="Fully customizable using Sass + Initial Setup."
             />
           </ListItem>
           <Divider sx={{ marginY: ".5rem" }} />
@@ -50,7 +50,7 @@ const Example = () => {
             </ListItemIcon>
             <ListItemText
               primary="MUI 5"
-              secondary="Fully Customizable Setup"
+              secondary="Fully Customizable Setup."
             />
           </ListItem>
           <Divider sx={{ marginY: ".5rem" }} />
@@ -58,7 +58,17 @@ const Example = () => {
             <ListItemIcon>
               <GridViewRoundedIcon />
             </ListItemIcon>
-            <ListItemText primary="axios" />
+            <ListItemText primary="axios" secondary="For data fetching." />
+          </ListItem>
+          <Divider sx={{ marginY: ".5rem" }} />
+          <ListItem>
+            <ListItemIcon>
+              <GridViewRoundedIcon />
+            </ListItemIcon>
+            <ListItemText
+              primary="validator"
+              secondary="For different types of data validation."
+            />
           </ListItem>
           <Divider sx={{ marginY: ".5rem" }} />
           <ListItem>
