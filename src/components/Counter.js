@@ -3,6 +3,7 @@ import Button from "@mui/material/Button";
 import ButtonGroup from "@mui/material/ButtonGroup";
 import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
+import Typography from "@mui/material/Typography";
 
 const Counter = () => {
   const [count, setCount] = React.useState(0);
@@ -17,7 +18,13 @@ const Counter = () => {
 
   return (
     <>
-      <p className="text-secondary display-1 fw-bold">{count}</p>
+      <Typography
+        variant="h3"
+        className="text-secondary"
+        sx={{ fontVariantNumeric: "tabular-nums" }}
+      >
+        {count}
+      </Typography>
       <ButtonGroup variant="outlined" size="large">
         <Button startIcon={<AddIcon />} onClick={addCount}>
           Add
