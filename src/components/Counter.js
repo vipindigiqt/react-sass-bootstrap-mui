@@ -21,6 +21,7 @@ const Counter = () => {
       <Typography
         variant="h3"
         className="text-secondary"
+        marginButton
         sx={{ fontVariantNumeric: "tabular-nums" }}
       >
         {count}
