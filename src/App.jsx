@@ -1,10 +1,10 @@
-import Example from "./components/Example";
+import { Box, Typography } from "@mui/material";
 
 const App = () => {
   return (
-    <div className="App">
-      <Example />
-    </div>
+    <Box className="App" sx={{ textAlign: "center", p: 4 }}>
+      <Typography variant="h4">Hello World</Typography>
+    </Box>
   );
 };
 
