@@ -2,10 +2,8 @@ import React from "react";
 import { createRoot } from "react-dom/client";
 import { ThemeProvider } from "@mui/material/styles";
 import App from "./App";
-
 // Custom MUI theme
 import theme from "./styles/muiTheme";
-
 // Global styles
 import "./styles/global.scss";
 
